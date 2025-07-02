@@ -758,6 +758,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*--contct button--*/
+#contact .single-contact-box {
+  text-align: center;
+}
 
 /* contact-adress */
 .contact-add-head h3 {
@@ -790,13 +793,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-.hm-foot-icon {
-   
+.hm-foot-icon ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;    /* 把行内 / 行内块子元素居中 */
 }
-.hm-foot-icon ul li{float:left;}
+
+/* 取消浮动，改成 inline-block */
+.hm-foot-icon ul li {
+  float: none;
+  display: inline-block;
+}
+
 .hm-foot-icon ul li>a {
     color: #636a82;
-    margin-right:18px;
+    /*margin-right:18px;*/
+    margin: 0 9px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
     -ms-transition:.3s; 
